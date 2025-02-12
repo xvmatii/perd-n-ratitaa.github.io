@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(180deg, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            color: white;
+            animation: fondoAnimado 5s infinite alternate;
+        }
+        @keyframes fondoAnimado {
+            0% { background: linear-gradient(180deg, #ff9a9e, #fad0c4); }
+            100% { background: linear-gradient(180deg, #ff758c, #ff7eb3); }
+        }
+        .container {
+            margin-top: 10%;
+        }
+        h1 {
+            font-size: 36px;
+            background: rgba(0,0,0,0.4);
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .yes {
+            background-color: #ff4d6d;
+            color: white;
+        }
+        .no {
+            background-color: #6c757d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Quieres ser mi San Valentín? ❤️</h1>
+        <button class="yes" onclick="mostrarMensaje()">Sí</button>
+        <button class="no" onclick="redirigir()">No</button>
+        <p id="mensaje" style="display:none; font-size: 18px; background: rgba(0,0,0,0.6); padding: 15px; border-radius: 10px;"></p>
+    </div>
+    <script>
+        function mostrarMensaje() {
+            document.getElementById('mensaje').innerHTML = "Te amo mucho mi ratita, sos la persona más importante de mi vida, desde que empezamos a hablar sabía que teníamos conexión porque se podría decir que tenemos el mismo humor, casi los mismos gustos y todas esas cosas. Aunque por un tiempo habíamos dejado de hablar, recuperamos ese interés que teníamos antes y se lo agradezco a Dios. Te amo muchísimo mi vida, ojalá esto nunca se acabe.";
+            document.getElementById('mensaje').style.display = 'block';
+        }
+        function redirigir() {
+            alert("No puedes decir que no. ¡Dale que sí!");
+        }
+    </script>
+</body>
+</html>
